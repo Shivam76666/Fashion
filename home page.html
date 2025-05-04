@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Product Page</title>
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .socials {
+      margin-top: 15px;
+    }
+    .socials a {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+    .socials a:hover {
+      background-color: #f85f73;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <img src="fashion.png" alt="Fashion Logo" style="height: 40px; position: absolute; top:10px; left: 0;">
+    <nav>
+      <a href="#catalogue">CATALOGUE</a>
+      <a href="#fashion">FASHION</a>
+      <a href="#favourite">FAVOURITE</a>
+      <a href="#lifestyle">LIFESTYLE</a>
+      <button class="signup" onclick="window.location.href='#signup'">SIGN UP</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="tags">
+      <button class="tag">T-shirts</button>
+      <button class="tag">Full Sleeve T-Shirts</button>
+      <button class="tag available">Piece Available</button>
+    </div>
+
+    <div class="product-display">
+      <button class="prev-btn">❮</button>
+
+      <!-- GREY images -->
+      <div class="image-set grey active" id="catalogue">
+        <img src="product-grey1.jpg" alt="Grey T-shirt 1" />
+        <img src="product-grey2.jpg" alt="Grey T-shirt 2" />
+        <img src="product-grey3.jpg" alt="Grey T-shirt 3" />
+        <img src="product-grey4.jpg" alt="Grey T-shirt 4" />
+      </div>
+
+      <!-- BLACK image -->
+      <div class="image-set black" id="fashion">
+        <img src="product-black1.jpg" alt="Black T-shirt" />
+        <img src="product-black2.jpg" alt="Black T-shirt" />
+        <img src="product-black3.jpg" alt="Black T-shirt" />
+        <img src="product-black4.jpg" alt="Black T-shirt" />
+      </div>
+
+      <!-- RED image -->
+      <div class="image-set red" id="favourite">
+        <img src="product-red1.jpg" alt="Red T-shirt" />
+        <img src="product-red2.jpg" alt="Red T-shirt" />
+        <img src="product-red3.jpg" alt="Red T-shirt" />
+        <img src="product-red4.jpg" alt="Red T-shirt" />
+      </div>
+
+      <!-- BLUE image -->
+      <div class="image-set blue" id="lifestyle">
+        <img src="product-blue1.jpg" alt="Blue T-shirt" />
+        <img src="product-blue2.jpg" alt="Blue T-shirt" />
+        <img src="product-blue3.jpg" alt="Blue T-shirt" />
+        <img src="product-blue4.jpg" alt="Blue T-shirt" />
+      </div>
+
+      <button class="next-btn">❯</button>
+    </div>
+
+    <div class="details">
+      <div class="detail">Fabric: <span class="tag">Cotton</span></div>
+      <div class="detail">Colors: 
+        <div class="colors">
+          <div class="color grey"></div>
+          <div class="color black"></div>
+          <div class="color red"></div>
+          <div class="color blue"></div>
+        </div>
+      </div>
+      <div class="detail">Sizes: 
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+          <button>XXL</button>
+        </div>
+      </div>
+      <div class="detail">
+        Price: <span class="price">850</span> 
+        <span class="discount">-34%</span> 
+        <span class="mrp">M.R.P. ₹1299</span>
+      </div>
+    </div>
+
+    <section class="related">
+      <h3>Related Products</h3>
+      <div class="related-products">
+        <div class="product-card">
+          <img src="vneck.jpg" alt="V-Neck T-Shirt" width="250" />
+          <p>V-Neck T-Shirts</p>
+          <small>Explore Now!</small>
+        </div>
+        <div class="product-card">
+          <img src="fullsleeve.jpg" alt="Full Sleeve T-Shirt" width="250" />
+          <p>Full Sleeve T-shirts</p>
+          <small>Explore Now!</small>
+        </div>
+        <div class="product-card">
+          <img src="model1.jpg" alt="Another Style" width="250" />
+          <p>Trendy T-Shirts</p>
+          <small>Explore Now!</small>
+        </div>
+        <div class="product-card">
+          <img src="model4.jpg" alt="Another Style" width="250" />
+          <p> Full Sleeve T-shirts</p>
+          <small>Explore Now!</small>
+        </div>
+        <div class="product-card">
+          <img src="model3.jpg" alt="Another Style" width="250" />
+          <p>Trendy T-Shirts</p>
+          <small>Explore Now!</small>
+        </div>
+        <div class="product-card">
+          <img src="model2.jpg" alt="Another Style" width="250" />
+          <p>Trendy T-Shirts</p>
+          <small>Explore Now!</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>FASHION</h3>
+        <p>Complete your style with awesome clothes from us!</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h5>Company</h5>
+          <a href="#">About</a>
+          <a href="#">Contact us</a>
+          <a href="#">Support</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <h5>Quick Link</h5>
+          <a href="#">Share Location</a>
+          <a href="#">Order Tracking</a>
+          <a href="#">Size Guide</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <a href="#">Terms & conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
